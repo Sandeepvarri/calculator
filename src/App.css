@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid rgb(161, 152, 113);
+    border-radius:  10px 10px 0px 0px;
+}
+
+.pageHeading{
+    border-radius:  10px 10px 0px 0px;
+    padding: 10px 10px;
+    background-color: thistle;
+    color: rgb(97, 63, 97);
+}
+
+.ind-num-btns:hover, .ind-op-btns:hover, .ind-oth-btn:hover{
+    background-color: thistle;
+    color: rgb(97, 63, 97);
+    font-weight: bolder;
+    font-size: larger;   
+}
+
+.ind-num-btns, .ind-op-btns, .ind-oth-btn{
+    
+    border : none;
+    
+}
+.ind-op-btns, .ind-num-btns, .ind-oth-btn{
+    width: 99px;  
+    height: 50px;
+}
+
+.btns{
+   display: flex;
+   justify-content: center;
+   margin: auto;
+}
+
+.in-out-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-top: 1px solid rgb(161, 152, 113);
+    border-bottom: 1px solid rgb(161, 152, 113);
+
+}
+
+.operations-container{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 228, 201);
+}
+
+.num-other-container{
+ 
+    float: right;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.numbers-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243, 231, 247);
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.other-btn-container{
+    float: right;
+    display: flex;
+    background-color: rgb(219, 245, 226);
+    justify-content: space-around; 
+}
+
+.in-out-container input {
+    padding: 10px;
+    border-radius: 4px;
+    text-align: right;
+    margin-bottom: 3px;
+    background-color: rgb(247, 245, 234);
+    border: none;
+}
+
+.calInput{
+color: rgb(93, 33, 212);
+}
+
+.calOutput{
+    color: rgb(21, 100, 11);
+}
+
+.calInput:focus, .calOutput:focus {
+    outline: rgb(131, 199, 238) solid 2px;
+}
